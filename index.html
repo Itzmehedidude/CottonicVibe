@@ -1,39 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#111827">
-<link rel="manifest" href="./manifest.json">
-<link rel="stylesheet" href="./styles.css">
-<title>StockFlow — Offline Inventory</title>
-</head>
-<body>
-<div id="toast" class="toast"></div>
-<div class="app">
-  <aside class="sidebar">
-    <div class="brand"><div class="brand-mark">S</div><div><b>StockFlow</b><small>Offline Inventory</small></div></div>
-    <nav>
-      <button class="nav active" data-page="dashboard">▦ <span>Dashboard</span></button>
-      <button class="nav" data-page="inventory">▣ <span>Inventory</span></button>
-      <button class="nav" data-page="sales">↗ <span>Sales History</span></button>
-      <button class="nav" data-page="reports">◔ <span>Reports</span></button>
-      <button class="nav" data-page="settings">⚙ <span>Settings</span></button>
-    </nav>
-    <div class="offline"><i></i><span>Offline storage active</span></div>
-  </aside>
-  <main class="main">
-    <header class="topbar">
-      <div><button id="mobileMenu" class="icon-btn">☰</button><div><h1 id="pageTitle">Dashboard</h1><p id="pageSub">Overview of your stock and sales</p></div></div>
-      <button class="primary" id="quickAdd">＋ Add Product</button>
-    </header>
-    <section id="content"></section>
-  </main>
-</div>
-
-<div class="modal-wrap" id="modal">
-  <div class="modal" id="modalBody"></div>
-</div>
-<script src="./app.js"></script>
-</body>
-</html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827"><link rel="manifest" href="./manifest.json"><link rel="stylesheet" href="./styles.css"><title>StockFlow</title></head>
+<body><div id="toast"></div><aside id="side"><div class="brand"><b>StockFlow</b><small>Offline Inventory</small></div><button data-page="dashboard" class="nav active">▦ Dashboard</button><button data-page="inventory" class="nav">▣ Inventory</button><button data-page="sales" class="nav">↗ Sales History</button><button data-page="reports" class="nav">◔ Reports</button><button data-page="settings" class="nav">⚙ Settings</button></aside>
+<main><header><div><button id="menu">☰</button><h1 id="title">Dashboard</h1><p id="sub">Overview of your stock and sales</p></div><button id="addTop" class="primary">＋ Add Product</button></header><section id="content"></section></main>
+<div id="modal" class="overlay"><div id="modalBox" class="modal"></div></div><script src="./app.js"></script></body></html>
